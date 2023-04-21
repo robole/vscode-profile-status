@@ -2,8 +2,9 @@ const assert = require("assert");
 const vscode = require("vscode");
 
 suite("Extension", () => {
-  const extensionID = "robole.marky-stats";
-  const extensionShortName = "marky-stats";
+  const extensionShortName = "profile-status";
+  const publisherName = "robole";
+  const extensionID = `${publisherName}.${extensionShortName}`;
 
   let extension;
 
@@ -11,26 +12,25 @@ suite("Extension", () => {
     extension = vscode.extensions.getExtension(extensionID);
   });
 
-  test("Extension should activate", async () => {
-    // extension is active before test is run as it loads very quickly
-    assert.strictEqual(extension.isActive, true);
-  });
+  test("All package.json commands should be registered in extension", async () => {
+    // get active commands for user extension when VS Code is loaded
+    const allCommands = await vscode.commands.getCommands(true);
+    const extensionActiveCommands = allCommands.filter((c) =>
+      c.startsWith(`${extensionShortName}.`)
+    );
 
-  test("All package.json commands should be registered in extension", (done) => {
+    // commands declared in package.json
     const packageCommands = extension.packageJSON.contributes.commands.map(
       (c) => c.command
     );
 
-    // get commands for all user extensions excluding vs code commands.
-    vscode.commands.getCommands(true).then((allCommands) => {
-      const activeCommands = allCommands.filter((c) =>
-        c.startsWith(`${extensionShortName}.`)
+    packageCommands.forEach((command) => {
+      const result = extensionActiveCommands.some((c) => c === command);
+      assert.strictEqual(
+        result,
+        true,
+        `${command} command is in package.json but not registered in extension.`
       );
-      activeCommands.forEach((command) => {
-        const result = packageCommands.some((c) => c === command);
-        assert.strictEqual(result, true);
-      });
-      done();
     });
   });
 });
