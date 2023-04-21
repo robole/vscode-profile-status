@@ -5,6 +5,7 @@ const globalSettings = require("./globalSettings");
 async function activate(context) {
   let workspaceFolders = vscode.workspace.workspaceFolders;
 
+  // a workspace is open
   if (workspaceFolders) {
     let mainWorkspaceUri = workspaceFolders[0].uri;
     let profileName = await globalSettings.getProfileName(mainWorkspaceUri);
