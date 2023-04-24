@@ -8,7 +8,9 @@ async function activate(context) {
   // a workspace is open
   if (workspaceFolders) {
     let mainWorkspaceUri = workspaceFolders[0].uri;
-    let profileName = await globalSettings.getProfileName(mainWorkspaceUri);
+
+    await globalSettings.loadSettings(context);
+    let profileName = globalSettings.getProfileName(mainWorkspaceUri);
 
     let item = statusBarItem.build("Right");
     item.text = `Profile: ${profileName}`;

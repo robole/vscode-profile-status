@@ -31,7 +31,7 @@ The extension is loaded after VS Code has fully loaded. It is non-blocking, so d
 
 To be more specific, the [activation event](https://code.visualstudio.com/api/references/activation-events) is `onStartupFinished`.
 
-## Contributions
+## Contribute
 
 If there is a bug or you have a suggestion, please raise an issue.
 
@@ -57,4 +57,4 @@ The item may have been forced out! You can test this by zooming out, so the text
 
 This project does not support multi-root workspaces because I do not use them!
 
-If you would like support added, raise an issue to request the feature.
+If you would like support added, raise an issue to request the feature. A contibution is welcome.

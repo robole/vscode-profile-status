@@ -1,15 +1,17 @@
 const vscode = require("vscode");
 const fs = require("fs/promises");
+const Environment = require("./environment");
 
 const DEFAULT_PROFILE_ID_STRING = "__default__profile__";
-let settingsFile = "/home/rob/.config/VSCodium/User/globalStorage/storage.json";
-
 let settings;
 
-async function loadSettings() {
+async function loadSettings(context) {
   let content;
 
   try {
+    let env = new Environment(context);
+    let settingsFile = env.getGlobalStoragePath();
+
     content = await fs.readFile(settingsFile);
     settings = JSON.parse(content);
   } catch (err) {
@@ -19,11 +21,7 @@ async function loadSettings() {
   }
 }
 
-async function getProfileByName(id) {
-  if (settings === undefined) {
-    await loadSettings();
-  }
-
+function getProfileByName(id) {
   let profileName = "unknown";
 
   if (id === DEFAULT_PROFILE_ID_STRING) {
@@ -41,12 +39,8 @@ async function getProfileByName(id) {
   return profileName;
 }
 
-async function getProfileName(workspaceUri) {
+function getProfileName(workspaceUri) {
   let name = "Unknown";
-
-  if (settings === undefined) {
-    await loadSettings();
-  }
 
   if (settings.profileAssociations.workspaces) {
     //association is in form of: { workspace_uri : profile_id}
@@ -62,11 +56,13 @@ async function getProfileName(workspaceUri) {
       return true;
     });
 
-    name = await getProfileByName(profileID);
+    name = getProfileByName(profileID);
   }
+
   return name;
 }
 
 module.exports = {
+  loadSettings,
   getProfileName,
 };

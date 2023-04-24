@@ -13,7 +13,7 @@ suite("Extension", () => {
   });
 
   test("All package.json commands should be registered in extension", async () => {
-    // get active commands for user extension when VS Code is loaded
+    // get active commands for this extension
     const allCommands = await vscode.commands.getCommands(true);
     const extensionActiveCommands = allCommands.filter((c) =>
       c.startsWith(`${extensionShortName}.`)
