@@ -1,6 +1,6 @@
 const vscode = require("vscode");
 const statusBarItem = require("./statusBarItem");
-const globalSettings = require("./globalSettings");
+const Environment = require("./environment");
 
 async function activate(context) {
   let workspaceFolders = vscode.workspace.workspaceFolders;
@@ -9,12 +9,17 @@ async function activate(context) {
   if (workspaceFolders) {
     let mainWorkspaceUri = workspaceFolders[0].uri;
 
-    await globalSettings.loadSettings(context);
-    let profileName = globalSettings.getProfileName(mainWorkspaceUri);
+    try {
+      let env = new Environment(context);
+      let globalState = await env.getGlobalState();
+      let profileName = globalState.getProfileName(mainWorkspaceUri);
 
-    let item = statusBarItem.build("Right");
-    item.text = `Profile: ${profileName}`;
-    item.show();
+      let item = statusBarItem.build("Right");
+      item.text = `Profile: ${profileName}`;
+      item.show();
+    } catch (err) {
+      console.error(err);
+    }
   }
 }
 
