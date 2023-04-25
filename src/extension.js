@@ -2,6 +2,10 @@ const vscode = require("vscode");
 const statusBarItem = require("./statusBarItem");
 const Environment = require("./environment");
 const globalState = require("./globalState");
+const configuration = require("./configuration");
+
+let item;
+let profileName;
 
 async function activate(context) {
   let workspaceFolders = vscode.workspace.workspaceFolders;
@@ -15,14 +19,36 @@ async function activate(context) {
       let globalStateUri = env.getGlobalStateUri();
 
       let state = globalState(globalStateUri);
-      let profileName = await state.getProfileName(mainWorkspaceUri);
+      profileName = await state.getProfileName(mainWorkspaceUri);
 
-      let item = statusBarItem.build("Right");
-      item.text = `Profile: ${profileName}`;
-      item.show();
+      showStatusBarItem();
+
+      let disposable = vscode.workspace.onDidChangeConfiguration(
+        changeConfigurationHandler
+      );
+
+      context.subscriptions.push(disposable);
     } catch (err) {
       console.error(err);
     }
+  }
+}
+
+function showStatusBarItem() {
+  let alignment = configuration.getAlignment();
+  item = statusBarItem.build(`Profile: ${profileName}`, alignment);
+  item.show();
+}
+
+function reload() {
+  item.dispose();
+  showStatusBarItem();
+}
+
+function changeConfigurationHandler(e) {
+  // update only if extension setting was changed
+  if (e.affectsConfiguration(configuration.getPrefix())) {
+    reload();
   }
 }
 

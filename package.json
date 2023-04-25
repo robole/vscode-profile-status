@@ -35,7 +35,22 @@
   ],
   "main": "./dist/extension.js",
   "contributes": {
-    "commands": []
+    "commands": [],
+    "configuration": {
+      "type": "object",
+      "title": "Profile Status",
+      "properties": {
+        "profileStatus.itemAlignment": {
+          "type": "string",
+          "default": "Left",
+          "enum": [
+            "Left",
+            "Right"
+          ],
+          "description": "Set the position on the status bar."
+        }
+      }
+    }
   },
   "scripts": {
     "lint": "eslint src",

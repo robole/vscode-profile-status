@@ -31,6 +31,12 @@ The extension is loaded after VS Code has fully loaded. It is non-blocking, so d
 
 To be more specific, the [activation event](https://code.visualstudio.com/api/references/activation-events) is `onStartupFinished`.
 
+## Settings
+
+| Name                                               | Type    | Default | Description                                            |
+| -------------------------------------------------- | ------- | ------- | ------------------------------------------------------ |
+| Profile Status: Alignment | String (enum) | "Left"   | Set the position on the status bar. Values are : "Left" and "Right".|
+
 ## Contribute
 
 If there is a bug or you have a suggestion, please raise an issue.
@@ -49,12 +55,16 @@ Thank you! 🙏
 
 Perhaps, this extension is not included in your current profile. Run the command **`Profiles: Show contents...`** to check.
 
-Is your status bar crowded? Is your window a narrow width?
+The item may have been forced out (not enough room), or hidden! Right-clicking on the status bar shows a complete list of status bar items, and if they are enabled or not.
 
-The item may have been forced out! You can test this by zooming out, so the text becomes very small, and you will see more items on the status bar. You can hide or disable other status bar items to make space.
+### Does this extension support multi-root workspaces?
 
-### I am using a multi-root workspace, why can't I see different profiles for each of the subprojects?
-
-This project does not support multi-root workspaces because I do not use them!
+No! I do not use them!
 
 If you would like support added, raise an issue to request the feature. A contibution is welcome.
+
+### Does this support remote or WSL (Windows Subsystem for Linux)?
+
+The extensions looks on the local file system for the global state in a file called *storage.json*. This may not be available when you are working remotely, or in WSL.
+
+If you have a suggestion to add support - a contibution is welcome.

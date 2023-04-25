@@ -3,7 +3,7 @@ const vscode = require("vscode");
 /**
  * Factory method to create a new status bar item
  */
-function build(alignment = "Left") {
+function build(text, alignment = "Left") {
   // priority determines how far to the left or right the item
   // is aligned. These arbitary numbers gave me the result I desired,
   // which is to keep the item closest to the center of the bar
@@ -20,6 +20,7 @@ function build(alignment = "Left") {
     priority
   );
 
+  statusBarItem.text = text;
   statusBarItem.command = "workbench.profiles.actions.switchProfile";
 
   return statusBarItem;
