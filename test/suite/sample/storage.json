@@ -1,0 +1,15 @@
+{
+  "profileAssociations": {
+    "workspaces": {
+      "file:///home/rob/programming/workspace/js/vscode/vscode-profile-status": "6c702312",
+      "file:///home/rob/programming/workspace/web/artifice": "__default__profile__"
+    },
+    "emptyWindows": {}
+  },
+  "userDataProfiles": [
+    {
+      "location": "6c702312",
+      "name": "Teaching"
+    }
+  ]
+}

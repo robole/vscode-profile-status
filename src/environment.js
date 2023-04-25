@@ -1,26 +1,19 @@
+const vscode = require("vscode");
 const path = require("path");
-const fs = require("fs/promises");
-const GlobalState = require("./globalState");
 
 /**
- * Environment information.
+ * App information about local system.
  */
 class Environment {
   constructor(context) {
-    this.context = context;
-    this.os = process.platform;
     this.globalStateUri = resolveGlobalStateUri(context);
   }
 
   /**
-   * Get the JSON object of the storage.json file that represents the global workspace state.
+   * Get the URI of the storage.json file that represents the global workspace state.
    */
-  async getGlobalState() {
-    let content = await fs.readFile(this.globalStateUri);
-    let obj = JSON.parse(content);
-    let globalState = new GlobalState(obj);
-
-    return globalState;
+  getGlobalStateUri() {
+    return vscode.Uri.file(this.globalStateUri);
   }
 }
 
