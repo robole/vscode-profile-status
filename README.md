@@ -11,19 +11,25 @@
 
 <p align="center">
 <img src="https://img.shields.io/static/v1?logo=visual-studio-code&label=made%20for&message=VS%20Code&color=0000ff" alt="Made for VSCode">
-<img src="https://img.shields.io/visual-studio-marketplace/v/robole.profile-status?logo=visual-studio-code&color=ffa500" alt="Visual Studio Marketplace Version">
-<img src="https://img.shields.io/static/v1?logo=visual-studio-code&label=size&message=50KB&color=008000"
+<img src="https://img.shields.io/visual-studio-marketplace/v/robole.profile-status?logo=visual-studio-code&color=d6c43e" alt="Visual Studio Marketplace Version">
+<img src="https://img.shields.io/static/v1?logo=visual-studio-code&label=size&message=35KB&color=008000"
 alt="Extension file size in bytes">
-<img src="https://img.shields.io/visual-studio-marketplace/r/robole.profile-status?logo=visual-studio-code&color=yellow" alt="Visual Studio Marketplace Rating">
+<img src="https://img.shields.io/visual-studio-marketplace/r/robole.profile-status?logo=visual-studio-code&color=d6c43e" alt="Visual Studio Marketplace Rating">
 <img src="https://img.shields.io/visual-studio-marketplace/d/robole.profile-status?logo=visual-studio-code&color=blue" alt="downloads"/>
 <img src="https://img.shields.io/visual-studio-marketplace/i/robole.profile-status?logo=visual-studio-code&color=blue" alt="installs"/>
 <img src="https://img.shields.io/static/v1?label=built%20with&message=flava%20in%20ya%20ear%20%26%20javascript&color=d6c43e" alt="Built with flava in ya ear and javascript"/>
 <a href="https://ko-fi.com/roboleary"><img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-$4-orange?logo=buy-me-a-coffee" alt="Buy Rob OLeary a coffee"></a>
 </p>
 
-The profile name appears as an item on the left-hand side of the status bar, baby baby.
+The profile name appears as an item on the left-hand side of the status bar, baby baby. 👊
 
-You can change the profile by clicking the item.
+![screenshot of markdown open with the profile status item in the status bar saying "Profile: Default"](img/screenshot.png)
+
+See "Profile: Default" item above. 🖕
+
+**You can change the profile by clicking the item 🖱️, as demonstrated below** .
+
+![demo of clicking the status bar item and changing the profile from Default to Teaching](img/demo.webp)
 
 ## Activation
 
