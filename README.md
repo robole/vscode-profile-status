@@ -21,7 +21,7 @@ alt="Extension file size in bytes">
 <a href="https://ko-fi.com/roboleary"><img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-$4-orange?logo=buy-me-a-coffee" alt="Buy Rob OLeary a coffee"></a>
 </p>
 
-The profile name appears as an item on the left-hand side of the status bar.
+The profile name appears as an item on the left-hand side of the status bar, baby baby.
 
 You can change the profile by clicking the item.
 
@@ -55,7 +55,7 @@ Thank you! 🙏
 
 Perhaps, this extension is not included in your current profile. Run the command **`Profiles: Show contents...`** to check.
 
-The item may have been forced out (not enough room), or hidden! Right-clicking on the status bar shows a complete list of status bar items, and if they are enabled or not.
+The item may have been forced out (not enough room), or it is hidden/disabled! Right-clicking on the status bar shows a complete list of status bar items, and shows if they are enabled or not. You can disable other items if the status bar is crowded.
 
 ### Does this extension support multi-root workspaces?
 
@@ -65,6 +65,4 @@ If you would like support added, raise an issue to request the feature. A contib
 
 ### Does this support remote or WSL (Windows Subsystem for Linux)?
 
-The extensions looks on the local file system for the global state in a file called *storage.json*. This may not be available when you are working remotely, or in WSL.
-
-If you have a suggestion to add support - a contibution is welcome.
+The extensions looks on the local file system for the global state in a file called *storage.json*. This may not be available when you are working remotely, or in WSL. If you have a suggestion to add support - a contibution is welcome.

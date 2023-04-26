@@ -12,7 +12,7 @@ suite("Extension", () => {
     extension = vscode.extensions.getExtension(extensionID);
   });
 
-  test("All package.json commands should be registered in extension", async () => {
+  test("Should regiseter all package.json commands in the extension", async () => {
     // get active commands for this extension
     const allCommands = await vscode.commands.getCommands(true);
     const extensionActiveCommands = allCommands.filter((c) =>

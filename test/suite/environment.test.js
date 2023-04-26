@@ -2,19 +2,40 @@ const assert = require("assert");
 const Environment = require("../../src/environment");
 
 suite("Environment", () => {
-  // globalStoragePath value is bogus
-  let context = {
-    globalStoragePath:
-      "/home/xyz/.config/Code/User/globalStorage/robole.profile-status",
-  };
+  test("Should retrieve the URI of the global state file on unix-like machines (Linux, Mac)", () => {
+    if (process.platform !== "win32") {
+      // globalStoragePath value is bogus but path follows this pattern
+      let context = {
+        globalStoragePath:
+          "/home/xyz/.config/Code/User/globalStorage/robole.profile-status",
+      };
 
-  test("Should retrieve the URI of the global state file", () => {
-    let env = new Environment(context);
-    let uri = env.getGlobalStateUri();
+      let env = new Environment(context);
+      let uri = env.getGlobalStateUri();
 
-    assert.strictEqual(
-      uri.path,
-      "/home/xyz/.config/Code/User/globalStorage/storage.json"
-    );
+      assert.strictEqual(
+        uri.path,
+        "/home/xyz/.config/Code/User/globalStorage/storage.json"
+      );
+    }
+  });
+
+  // Have not be able to run this test as I do not have a Windows machine!!!
+  test("Should retrieve the URI of the global state file on a Windows machine", () => {
+    if (process.platform === "win32") {
+      // globalStoragePath value is bogus but path follows this pattern
+      let context = {
+        globalStoragePath:
+          "C:\\Users\\xyz\\AppData\\Local\\Code\\User\\globalStorage\\robole.profile-status",
+      };
+
+      let env = new Environment(context);
+      let uri = env.getGlobalStateUri();
+
+      assert.strictEqual(
+        uri.path,
+        "C:/Users/xyz/AppData/Local/Code/User/globalStorage/storage.json"
+      );
+    }
   });
 });

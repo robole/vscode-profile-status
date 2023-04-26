@@ -7,9 +7,10 @@ const configuration = require("../../src/configuration");
 const workspaceAlignment = "Right";
 
 suite("Configuration", () => {
-  //workspace settings are set in .vscode/settings.json
+  /*I have settings specific to this project in .vscode/settings.json. This will
+	ensure that this test is reliable */
 
-  test('get the default value of "Alignment"', () => {
+  test('Should retrieve the value of the "alignment" option', () => {
     const alignment = configuration.getAlignment();
     assert.strictEqual(alignment, workspaceAlignment);
   });
