@@ -21,19 +21,19 @@ alt="Extension file size in bytes">
 <a href="https://ko-fi.com/roboleary"><img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-$4-orange?logo=buy-me-a-coffee" alt="Buy Rob OLeary a coffee"></a>
 </p>
 
-The profile name appears as an item on the left-hand side of the status bar, baby baby. 👊
+The **profile name appears as an item on the left-hand side of the status bar, baby baby**. 👊
 
-![screenshot of markdown open with the profile status item in the status bar saying "Profile: Default"](img/screenshot.png)
+![screenshot of markdown open with the profile status item in the status bar saying "Profile: Default"](img/screenshot-statusbar.png)
 
-See "Profile: Default" item above. 🖕
+You can see we are using the *Default* profile in the screenshot of the status bar above. 👆
 
-**You can change the profile by clicking the item 🖱️, as demonstrated below** .
+**You can change the profile by clicking the item, as demonstrated below** .
 
 ![demo of clicking the status bar item and changing the profile from Default to Teaching](img/demo.webp)
 
 ## Activation
 
-The extension is loaded after VS Code has fully loaded. It is non-blocking, so does not affect startup times.
+The extension is loaded after VS Code has fully loaded. It is non-blocking, so does not affect the startup time.
 
 To be more specific, the [activation event](https://code.visualstudio.com/api/references/activation-events) is `onStartupFinished`.
 
@@ -51,7 +51,7 @@ If there is a bug or you have a suggestion, please raise an issue.
 
 You can show your appreciation by:
 1. **[Buying me a coffee or sponsoring me](https://ko-fi.com/roboleary)**. This will offer me encouragement to continue with this project and others. It can provide a path to dedicating more time to open-source in the future.
-1. **Starring the repo 🌟**. This will help other people find this.
+1. **Starring the repo 🌟, and leaving a review**. This will help other people find this.
 
 Thank you! 🙏
 
@@ -61,14 +61,16 @@ Thank you! 🙏
 
 Perhaps, this extension is not included in your current profile. Run the command **`Profiles: Show contents...`** to check.
 
-The item may have been forced out (not enough room), or it is hidden/disabled! Right-clicking on the status bar shows a complete list of status bar items, and shows if they are enabled or not. You can disable other items if the status bar is crowded.
+The item may have been forced out (not enough room), or it is hidden/disabled!
+
+Right-clicking on the status bar shows a complete list of status bar items, and shows if they are enabled or not. You can disable other items if the status bar is crowded.
 
 ### Does this extension support multi-root workspaces?
 
-No! I do not use them!
+No, I do not use them!
 
 If you would like support added, raise an issue to request the feature. A contibution is welcome.
 
 ### Does this support remote or WSL (Windows Subsystem for Linux)?
 
-The extensions looks on the local file system for the global state in a file called *storage.json*. This may not be available when you are working remotely, or in WSL. If you have a suggestion to add support - a contibution is welcome.
+The extensions looks on the local file system for the global state in a file called *storage.json*. This *may not* be available when you are working remotely, or in WSL. I do not use VS Code in this way, so I do not know how it is. If you have a suggestion in this regard - a contibution is welcome.
