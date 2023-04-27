@@ -25,8 +25,6 @@ The **profile name appears as an item on the left-hand side of the status bar, b
 
 ![screenshot of markdown open with the profile status item in the status bar saying "Profile: Default"](img/screenshot-statusbar.png)
 
-You can see it in the screenshot above.👆
-
 **You can change the profile by clicking the item, as demonstrated below** .
 
 ![demo of clicking the status bar item and changing the profile from Default to Teaching](img/demo.webp)
@@ -45,7 +43,7 @@ To be more specific, the [activation event](https://code.visualstudio.com/api/re
 
 ## Contribute
 
-If there is a bug or you have a suggestion, please raise an issue.
+You can consult the FAQ section for some common issues that you may encounter. If there is a bug or you have a suggestion, you can raise an issue. 
 
 ## Appreciate
 
