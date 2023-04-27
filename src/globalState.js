@@ -32,11 +32,11 @@ function globalState(uri) {
 
   async function parseFile() {
     try {
-      let data = await fs.readFile(uri.path);
+      let data = await fs.readFile(uri.fsPath);
       obj = JSON.parse(data);
     } catch (err) {
       console.error(
-        `Cannot read ${uri.path} to instantiate GlobalState. Err: ${err}`
+        `Cannot read ${uri.fsPath} to instantiate GlobalState. Err: ${err}`
       );
     }
   }
