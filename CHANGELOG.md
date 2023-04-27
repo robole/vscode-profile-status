@@ -4,6 +4,12 @@ All notable changes to the "test-profile" extension will be documented in this f
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.4.0] - 2023-04-27
+
+### Changed
+
+- Edited README to have no spacing between subtitle and badges.
+
 ## [0.3.0] - 2023-04-27
 
 ### Changed

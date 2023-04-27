@@ -8,7 +8,7 @@
   <br>
 </h1>
 <h4 align="center">Know which your profile you're using, <em>no doubt</em></h4>
-<br>
+
 <p align="center">
 <img src="https://img.shields.io/static/v1?logo=visual-studio-code&label=made%20for&message=VS%20Code&color=0000ff" alt="Made for VSCode">
 <img src="https://img.shields.io/visual-studio-marketplace/v/robole.profile-status?logo=visual-studio-code&color=d6c43e" alt="Visual Studio Marketplace Version">
