@@ -6,7 +6,7 @@ const fs = require("fs/promises");
 function getName(obj, id) {
   const DEFAULT_PROFILE_ID_STRING = "__default__profile__";
 
-  let profileName = "Unknown";
+  let profileName = "None";
 
   if (id === DEFAULT_PROFILE_ID_STRING) {
     profileName = "Default";
@@ -45,7 +45,7 @@ function globalState(uri) {
    * Get the name of the profile associated with a workspace.
    */
   async function getProfileName(workspaceUri) {
-    let name = "Unknown";
+    let name = "None";
 
     if (isEmpty(obj)) {
       await parseFile();
