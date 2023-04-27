@@ -25,7 +25,7 @@ The **profile name appears as an item on the left-hand side of the status bar, b
 
 ![screenshot of markdown open with the profile status item in the status bar saying "Profile: Default"](img/screenshot-statusbar.png)
 
-You can see we are using the *Default* profile in the screenshot of the status bar above. 👆
+You can see it in the screenshot above.👆
 
 **You can change the profile by clicking the item, as demonstrated below** .
 
