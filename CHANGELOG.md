@@ -4,6 +4,12 @@ All notable changes to the "test-profile" extension will be documented in this f
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.3.0] - 2023-04-27
+
+### Changed
+
+- Changed banner color to lighter color for marketplace page - `galleryBanner.color` in *package.json*.
+
 ## [0.2.0] - 2023-04-27
 
 ### Changed
