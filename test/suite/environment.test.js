@@ -14,7 +14,7 @@ suite("Environment", () => {
       let uri = env.getGlobalStateUri();
 
       assert.strictEqual(
-        uri.path,
+        uri.fsPath,
         "/home/xyz/.config/Code/User/globalStorage/storage.json"
       );
     }
@@ -26,15 +26,15 @@ suite("Environment", () => {
       // globalStoragePath value is bogus but path follows this pattern
       let context = {
         globalStoragePath:
-          "C:\\Users\\xyz\\AppData\\Local\\Code\\User\\globalStorage\\robole.profile-status",
+          "C:\\Users\\xyz\\AppData\\Roaming\\Code\\User\\globalStorage\\robole.profile-status",
       };
 
       let env = new Environment(context);
       let uri = env.getGlobalStateUri();
 
       assert.strictEqual(
-        uri.path,
-        "C:/Users/xyz/AppData/Local/Code/User/globalStorage/storage.json"
+        uri.fsPath,
+        "c:\\Users\\xyz\\AppData\\Roaming\\Code\\User\\globalStorage\\storage.json"
       );
     }
   });

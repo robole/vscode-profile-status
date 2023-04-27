@@ -43,7 +43,7 @@ To be more specific, the [activation event](https://code.visualstudio.com/api/re
 
 ## Contribute
 
-You can consult the FAQ section for some common issues that you may encounter. If there is a bug or you have a suggestion, you can raise an issue. 
+You can consult the FAQ section for some common issues that you may encounter. If there is a bug or you have a suggestion, you can raise an issue.
 
 ## Appreciate
 
@@ -71,4 +71,6 @@ If you would like support added, raise an issue to request the feature. A contib
 
 ### Does this support remote or WSL (Windows Subsystem for Linux)?
 
-The extensions looks on the local file system for the global state in a file called *storage.json*. This *may not* be available when you are working remotely, or in WSL. I do not use VS Code in this way, so I do not know how it is. If you have a suggestion in this regard - a contibution is welcome.
+This extension looks on the local file system for the global state in a file called *storage.json*. This *may not* be available when you are working remotely, or in WSL. I do not use VS Code in this way, so I do not know how it is!
+
+If you have a suggestion to support these environments - a contibution is welcome.
