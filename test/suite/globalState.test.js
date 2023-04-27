@@ -30,7 +30,7 @@ suite("Global State", () => {
     assert.strictEqual(name, "Default");
   });
 
-  test("Should retrieve the name 'None' when no profile is associated with the workspace yet", async function () {
+  test("Should retrieve the name 'Default' when no profile is associated with the workspace yet", async function () {
     let uri = vscode.Uri.file(sampleStorageFile);
     let gs = await globalState(uri);
 
@@ -39,6 +39,6 @@ suite("Global State", () => {
     );
     let name = await gs.getProfileName(workspaceUri);
 
-    assert.strictEqual(name, "None");
+    assert.strictEqual(name, "Default");
   });
 });

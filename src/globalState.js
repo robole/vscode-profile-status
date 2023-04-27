@@ -4,13 +4,9 @@ const fs = require("fs/promises");
  *  Profiles are identified by an internal ID e.g 6c702312. We retrieve the name of the profile through this ID.
  */
 function getName(obj, id) {
-  const DEFAULT_PROFILE_ID_STRING = "__default__profile__";
+  let profileName = "Default";
 
-  let profileName = "None";
-
-  if (id === DEFAULT_PROFILE_ID_STRING) {
-    profileName = "Default";
-  } else if (obj.userDataProfiles) {
+  if (obj.userDataProfiles) {
     let profileFound = obj.userDataProfiles.find((item) => {
       return item.location === id;
     });
@@ -23,10 +19,16 @@ function getName(obj, id) {
   return profileName;
 }
 
+/*
+ * Is it an empty object?
+ */
 function isEmpty(obj) {
   return Object.keys(obj).length === 0;
 }
 
+/*
+ * Closure for Global State
+ */
 function globalState(uri) {
   let obj = {};
 
@@ -45,7 +47,7 @@ function globalState(uri) {
    * Get the name of the profile associated with a workspace.
    */
   async function getProfileName(workspaceUri) {
-    let name = "None";
+    let name;
 
     if (isEmpty(obj)) {
       await parseFile();

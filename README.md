@@ -7,8 +7,8 @@
   <br>
   <br>
 </h1>
-<h4 align="center">Know which your profile you're using, no doubt</h4>
-
+<h4 align="center">Know which your profile you're using, <em>no doubt</em></h4>
+<br>
 <p align="center">
 <img src="https://img.shields.io/static/v1?logo=visual-studio-code&label=made%20for&message=VS%20Code&color=0000ff" alt="Made for VSCode">
 <img src="https://img.shields.io/visual-studio-marketplace/v/robole.profile-status?logo=visual-studio-code&color=d6c43e" alt="Visual Studio Marketplace Version">
@@ -28,8 +28,6 @@ The **profile name appears as an item on the left-hand side of the status bar, b
 **You can change the profile by clicking the item, as demonstrated below** .
 
 ![demo of clicking the status bar item and changing the profile from Default to Teaching](img/demo.webp)
-
-> **Note: The first time you open a folder in VS Code, this extension will say that the profile is "None". This is because no profile is associated with this folder. VS Code will associate the "Default" profile automatically when it sees that there is no existing profile association. The next time you open the same folder, it will say the profile is "Default".**
 
 ## Activation
 
@@ -71,8 +69,8 @@ No, I do not use them!
 
 If you would like support added, raise an issue to request the feature. A contibution is welcome.
 
-### Does this support remote or WSL (Windows Subsystem for Linux)?
+### Does this support remote or Windows Subsystem for Linux (WSL)?
 
-This extension looks on the **local file system** for the global state in a file called *storage.json*. This *may not* be available when you are working remotely, or in WSL. I do not use VS Code in this way, so I do not know how it is exactly!
+This extension looks in the **local file system** for the global state in a file called *storage.json*. This *may not* be available when you are working remotely, or in WSL. I do not use VS Code in this way, so I do not know how it is exactly!
 
 If you have a suggestion to support these environments - a contibution is welcome.
