@@ -1,12 +1,12 @@
 {
   "name": "profile-status",
   "displayName": "Profile Status",
-  "description": "Know which your profile you're using, no doubt",
+  "description": "Know which your profile you're using, no doubt!",
   "publisher": "robole",
   "author": {
     "name": "Rob O'Leary"
   },
-  "version": "0.4.0",
+  "version": "0.5.0",
   "preview": false,
   "engines": {
     "vscode": "^1.46.0"
