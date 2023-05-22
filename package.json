@@ -6,7 +6,7 @@
   "author": {
     "name": "Rob O'Leary"
   },
-  "version": "0.5.0",
+  "version": "0.6.0",
   "preview": false,
   "engines": {
     "vscode": "^1.46.0"
@@ -29,6 +29,21 @@
   "license": "Apache License 2.0",
   "categories": [
     "Other"
+  ],
+  "keywords": [
+    "profile",
+    "profile name",
+    "code profile name",
+    "profile name display",
+    "code profile name display",
+    "profile label",
+    "code profile label",
+    "profile name status bar",
+    "code profile name status bar",
+    "default profile",
+    "profile status bar",
+    "switch profile",
+    "change profile"
   ],
   "activationEvents": [
     "onStartupFinished"
