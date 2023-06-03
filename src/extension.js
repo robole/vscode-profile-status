@@ -8,12 +8,18 @@ let item;
 let profileName;
 
 async function activate(context) {
-  let workspaceFolders = vscode.workspace.workspaceFolders;
+  let workspaceFiles = vscode.workspace.workspaceFile;
+  let {workspaceFolders} = vscode.workspace;
 
-  // a workspace is open
+  // a workspace is open or simply a workfolder is open
   if (workspaceFolders) {
-    let mainWorkspaceUri = workspaceFolders[0].uri;
-
+    let mainWorkspaceUri;
+    if (workspaceFiles) {
+      mainWorkspaceUri = workspaceFiles;
+    } else {
+      mainWorkspaceUri = workspaceFolders[0].uri;
+    }
+    
     try {
       let env = new Environment(context);
       let globalStateUri = env.getGlobalStateUri();

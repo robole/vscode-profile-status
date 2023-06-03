@@ -7,9 +7,7 @@ function getName(obj, id) {
   let profileName = "Default";
 
   if (obj.userDataProfiles) {
-    let profileFound = obj.userDataProfiles.find((item) => {
-      return item.location === id;
-    });
+    let profileFound = obj.userDataProfiles.find((item) => item.location === id);
 
     if (profileFound) {
       profileName = profileFound.name;
@@ -54,7 +52,7 @@ function globalState(uri) {
     }
 
     if (obj.profileAssociations && obj.profileAssociations.workspaces) {
-      //association is in form of: { workspace_uri : profile_id}
+      // association is in form of: { workspace_uri : profile_id}
       const workspaceAssociations = obj.profileAssociations.workspaces;
 
       let profileID;
