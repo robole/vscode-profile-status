@@ -4,11 +4,21 @@ All notable changes to the "test-profile" extension will be documented in this f
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.7.0] - 2023-06-07
+
+### Added
+
+- Added issue templates for bugs and feature requests.
+
+### Changed
+
+- Edited README to clarify position on contributions.
+
 ## [0.6.0] - 2023-05-22
 
 ### Added
 
-- Added keywords to package.json.
+- Added keywords to *package.json*.
 
 ## [0.5.0] - 2023-04-27
 

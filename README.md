@@ -39,19 +39,17 @@ To be more specific, the [activation event](https://code.visualstudio.com/api/re
 | -------------------------------------------------- | ------- | ------- | ------------------------------------------------------ |
 | Profile Status: Alignment | String (enum) | "Left"   | Set the position on the status bar. Values are : "Left" and "Right".|
 
-## Got an issue?
-
-You can **consult the [FAQ section](#faq) for some common issues** that you may encounter. If there is a bug, you can raise an issue.
-
 ## Contribute
 
-If you find a bug or you have a suggestion, raise an issue please. Contributions are welcome if it can improve the extension.
+Contributions are welcome. **If you find a bug or you have a suggestion for a feature, please raise an issue.**  My time is limited to review PRs, **please do not submit a PR without raising an issue first**.
+
+You can **consult the [FAQ section](#faq) for some common issues** that you may encounter.
 
 ## Appreciate
 
 You can show your appreciation by:
 1. **[Buying me a coffee or sponsoring me](https://ko-fi.com/roboleary)**. This will offer me encouragement to continue with this project and others. It can provide a path to dedicating more time to open-source in the future.
-1. **Starring the repo 🌟, and leaving a review**. This will help other people find this.
+1. **Starring the repo 🌟, and [leaving a review](https://marketplace.visualstudio.com/items?itemName=robole.profile-status&ssr=false#review-details)**. This will help other people find this.
 
 Thank you! 🙏
 
