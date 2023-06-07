@@ -1,3 +1,3 @@
 {
-  "extends": ["roboleary-node"]
+  "extends": ["eslint-config-node-roboleary"]
 }
