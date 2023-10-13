@@ -4,12 +4,17 @@ All notable changes to the "test-profile" extension will be documented in this f
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.8.1] - 2023-10-13
+
+### Changed
+
+- Needed to change PAT secret on GitHub for publishing.
+
 ## [0.8.0] - 2023-10-13
 
 ### Added
 
 - Added downloads and installs badges to README.
-
 
 ## [0.7.0] - 2023-06-07
 
