@@ -11,12 +11,14 @@
 
 <p align="center">
 <img src="https://img.shields.io/static/v1?logo=visual-studio-code&label=made%20for&message=VS%20Code&color=2b62c6" alt="Made for VSCode">
-<img src="https://img.shields.io/visual-studio-marketplace/v/robole.profile-status?logo=visual-studio-code&color=d6c43e" alt="Visual Studio Marketplace Version">
-<img src="https://img.shields.io/static/v1?logo=visual-studio-code&label=size&message=31KB&color=ccc806"
+<img src="https://img.shields.io/visual-studio-marketplace/v/robole.profile-status?logo=visual-studio-code&color=2b62c6" alt="Visual Studio Marketplace Version">
+<img src="https://img.shields.io/static/v1?logo=visual-studio-code&label=size&message=31KB&color=2b62c6"
 alt="Extension file size in bytes">
-<img src="https://img.shields.io/visual-studio-marketplace/r/robole.profile-status?logo=visual-studio-code&color=d6c43e" alt="Visual Studio Marketplace Rating">
-<img src="https://img.shields.io/static/v1?label=built%20with&message=flava%20in%20ya%20ear%20%26%20javascript&color=c2cc39" alt="Built with flava in ya ear and javascript"/>
-<a href="https://ko-fi.com/roboleary"><img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-$4-f7f304?logo=buy-me-a-coffee" alt="Buy Rob OLeary a coffee"></a>
+<img src="https://img.shields.io/visual-studio-marketplace/r/robole.profile-status?logo=visual-studio-code&color=2b62c6" alt="Visual Studio Marketplace Rating">
+<img src="https://img.shields.io/visual-studio-marketplace/d/robole.profile-status?logo=visual-studio-code&color=2b62c6" alt="downloads"/>
+<img src="https://img.shields.io/visual-studio-marketplace/i/robole.profile-status?logo=visual-studio-code&color=2b62c6" alt="installs"/>
+<img src="https://img.shields.io/static/v1?label=built%20with&message=flava%20in%20ya%20ear%20%26%20javascript&color=2b62c6" alt="Built with flava in ya ear and javascript"/>
+<a href="https://ko-fi.com/roboleary"><img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-$4-gold?logo=buy-me-a-coffee" alt="Buy Rob OLeary a coffee"></a>
 </p>
 
 The **profile name appears as an item on the left-hand side of the status bar, baby baby**. 👊
@@ -41,7 +43,7 @@ To be more specific, the [activation event](https://code.visualstudio.com/api/re
 
 ## Contribute
 
-Contributions are welcome. **If you find a bug or you have a suggestion for a feature, please raise an issue.**  My time is limited to review PRs, **please do not submit a PR without raising an issue first**.
+Contributions are welcome. My time is limited to review PRs, **please do not submit a PR without raising an issue first**.
 
 You can **consult the [FAQ section](#faq) for some common issues** that you may encounter.
 
