@@ -5,7 +5,7 @@ const globalState = require("./globalState");
 const configuration = require("./configuration");
 
 let item;
-let profileName;
+let profileName = "";
 
 async function activate(context) {
   let workspaceFolders = vscode.workspace.workspaceFolders;
@@ -20,18 +20,20 @@ async function activate(context) {
 
       let state = globalState(globalStateUri);
       profileName = await state.getProfileName(mainWorkspaceUri);
-
-      showStatusBarItem();
-
-      let disposable = vscode.workspace.onDidChangeConfiguration(
-        changeConfigurationHandler
-      );
-
-      context.subscriptions.push(disposable);
     } catch (err) {
       console.error(err);
     }
+  } else {
+    profileName = "Default";
   }
+
+  showStatusBarItem();
+
+  let disposable = vscode.workspace.onDidChangeConfiguration(
+    changeConfigurationHandler
+  );
+
+  context.subscriptions.push(disposable);
 }
 
 function showStatusBarItem() {

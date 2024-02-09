@@ -43,9 +43,9 @@ To be more specific, the [activation event](https://code.visualstudio.com/api/re
 
 ## Contribute
 
-Contributions are welcome. My time is limited to review PRs, **please do not submit a PR without raising an issue first**.
+Contributions are welcome. If you find a bug, please raise an issue. You can **consult the [FAQ section](#faq) for some common issues** that you may encounter.
 
-You can **consult the [FAQ section](#faq) for some common issues** that you may encounter.
+My time is limited for PRs, please raise an issue to discuss first please.
 
 ## Appreciate
 

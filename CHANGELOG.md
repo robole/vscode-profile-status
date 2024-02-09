@@ -4,6 +4,16 @@ All notable changes to the "test-profile" extension will be documented in this f
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.9.0] - 2024-02-09
+
+### Fixed
+
+- Show status bar item when no workspace is open. Since there is no profile association when there is no workspace -- the "default" profile is assumed to be used.
+
+### Changed
+
+- Switched bundled from Webpack to Esbuild.
+
 ## [0.8.1] - 2023-10-13
 
 ### Changed
