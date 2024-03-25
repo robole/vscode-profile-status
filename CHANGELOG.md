@@ -4,6 +4,12 @@ All notable changes to the "test-profile" extension will be documented in this f
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.10.0] - 2024-03-25
+
+### Changed
+
+- Added the *Current Limitations* section to the README.
+
 ## [0.9.0] - 2024-02-09
 
 ### Fixed
