@@ -47,7 +47,7 @@ The [VS Code Extension API](https://code.visualstudio.com/api) does not have an 
 - If you create a new, empty profile when running the command `Profiles: Create Profile` with the default settings, the profiles changes but VS Code is not reloaded;
 - If you have the same workspace open in 2 VS Code instances and switch profile in one. The profile is not updated in the other instance.
 
-If you would like the VS Code team to provide API support for this feature, you can give a 👍 on the [feature request for adding a profile change event](https://github.com/microsoft/vscode/issues/208195).
+If you would like the VS Code team to provide API support for this feature, you can give a 👍 (thumbs up) on the [feature request for adding a profile change event](https://github.com/microsoft/vscode/issues/208195).
 
 ## Contribute
 
