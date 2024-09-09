@@ -9,9 +9,9 @@
 </h1>
 <h4 align="center">Know which your profile you're using, <em>no doubt</em>!</h4>
 
-> Its best to consider this as an ***experiment***. Since the Extension API does not expose any functionality related to profiles, I have done a crafty workaround to get the profile name. However this has some [limitations](#current-limitations) as outlined below.
+> Its best to consider this as an ***experiment***. Since the Extension API does not expose any functionality related to profiles, I have done a crafty workaround to get the profile name in global state. However this has some [limitations](#current-limitations) as outlined below.
 >
->Microsoft do *not* plan to add anything related to profiles to the Extensions API (see [issue](https://github.com/microsoft/vscode/issues/208195#issuecomment-2046778283)). If you are interested in this as feature, you can leave a [review in the VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=robole.profile-status&ssr=false#review-details) and I can raise an issue again with Microsoft if there is enough interest.
+> Microsoft do *not* plan to add anything related to profiles to the Extensions API (see [issue](https://github.com/microsoft/vscode/issues/208195#issuecomment-2046778283)). If you are interested in this as feature, you can leave a [review in the VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=robole.profile-status&ssr=false#review-details) and I can raise an issue again with Microsoft if there is enough interest.
 
 The profile name appears as an item on the left-hand side of the status bar, baby baby. 👊
 
@@ -45,15 +45,7 @@ If you would like the VS Code team to provide API support for this feature, you 
 
 You are welcome to raise an issue. Since this as an experiment, I will not be doing much more with this.
 
-You can **consult the [FAQ section](#faq) for some common issues** that you may encounter.
-
-## Appreciate
-
-You can show your appreciation by:
-1. **[Buying me a coffee or sponsoring me](https://ko-fi.com/roboleary)**. This will offer me encouragement to continue with this project and others. It can provide a path to dedicating more time to open-source in the future.
-1. **Starring the repo 🌟, and [leaving a review](https://marketplace.visualstudio.com/items?itemName=robole.profile-status&ssr=false#review-details)**. This will help other people find this.
-
-Thank you! 🙏
+You can consult the [FAQ section](#faq) for some common issues that you may encounter.
 
 ## FAQ
 
@@ -65,9 +57,7 @@ The item may have been forced out (not enough room), or it is hidden/disabled! R
 
 ### Does this extension support multi-root workspaces?
 
-No, I do not use them!
-
-If you would like support added, raise an issue to request the feature.
+Nope.
 
 ### Does this support remote or Windows Subsystem for Linux (WSL)?
 
