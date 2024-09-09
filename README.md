@@ -9,25 +9,15 @@
 </h1>
 <h4 align="center">Know which your profile you're using, <em>no doubt</em>!</h4>
 
-<p align="center">
-<img src="https://img.shields.io/static/v1?logo=visual-studio-code&label=made%20for&message=VS%20Code&color=2b62c6" alt="Made for VSCode">
-<img src="https://img.shields.io/visual-studio-marketplace/v/robole.profile-status?logo=visual-studio-code&color=2b62c6" alt="Visual Studio Marketplace Version">
-<img src="https://img.shields.io/static/v1?logo=visual-studio-code&label=size&message=31KB&color=2b62c6"
-alt="Extension file size in bytes">
-<img src="https://img.shields.io/visual-studio-marketplace/r/robole.profile-status?logo=visual-studio-code&color=2b62c6" alt="Visual Studio Marketplace Rating">
-<img src="https://img.shields.io/visual-studio-marketplace/d/robole.profile-status?logo=visual-studio-code&color=2b62c6" alt="downloads"/>
-<img src="https://img.shields.io/visual-studio-marketplace/i/robole.profile-status?logo=visual-studio-code&color=2b62c6" alt="installs"/>
-<img src="https://img.shields.io/static/v1?label=built%20with&message=flava%20in%20ya%20ear%20%26%20javascript&color=2b62c6" alt="Built with flava in ya ear and javascript"/>
-<a href="https://ko-fi.com/roboleary"><img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-$4-gold?logo=buy-me-a-coffee" alt="Buy Rob OLeary a coffee"></a>
-</p>
+> Its best to consider this as an ***experiment***. Since the Extension API does not expose any functionality related to profiles, I have done a crafty workaround to get the profile name. However this has some [limitations](#current-limitations) as outlined below.
+>
+>Microsoft do *not* plan to add anything related to profiles to the Extensions API (see [issue](https://github.com/microsoft/vscode/issues/208195#issuecomment-2046778283)). If you are interested in this as feature, you can leave a [review in the VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=robole.profile-status&ssr=false#review-details) and I can raise an issue again with Microsoft if there is enough interest.
 
-> Its best to consider this as an experiment. Since the Extension API does not expose any functionality related to profiles, I have done a crafty workaround to get the profile name. However this has some [limitations](#current-limitations) as outlined below. Microsoft have no plans to add anything related to profiles to the Extensions API (see [issue](https://github.com/microsoft/vscode/issues/208195#issuecomment-2046778283)). If you are interested in this as feature, you can leave a review in the VS Code Marketplace and I can raise an issue again with Microsoft if there is enough interest.
-
-The **profile name appears as an item on the left-hand side of the status bar, baby baby**. 👊
+The profile name appears as an item on the left-hand side of the status bar, baby baby. 👊
 
 ![screenshot of markdown open with the profile status item in the status bar saying "Profile: Default"](img/screenshot-statusbar.png)
 
-**You can change the profile by clicking the item, as demonstrated below** .
+You can change the profile by clicking the item, as demonstrated below.
 
 ![demo of clicking the status bar item and changing the profile from Default to Teaching](img/demo.webp)
 
