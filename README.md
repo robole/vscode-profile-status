@@ -21,6 +21,8 @@ alt="Extension file size in bytes">
 <a href="https://ko-fi.com/roboleary"><img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-$4-gold?logo=buy-me-a-coffee" alt="Buy Rob OLeary a coffee"></a>
 </p>
 
+> Its best to consider this as an experiment. Since the Extension API does not expose any functionality related to profiles, I have done a crafty workaround to get the profile name. However this has some [limitations](#current-limitations) as outlined below. Microsoft have no plans to add anything related to profiles to the Extensions API (see [issue](https://github.com/microsoft/vscode/issues/208195#issuecomment-2046778283)). If you are interested in this as feature, you can leave a review in the VS Code Marketplace and I can raise an issue again with Microsoft if there is enough interest.
+
 The **profile name appears as an item on the left-hand side of the status bar, baby baby**. 👊
 
 ![screenshot of markdown open with the profile status item in the status bar saying "Profile: Default"](img/screenshot-statusbar.png)
@@ -43,17 +45,17 @@ To be more specific, the [activation event](https://code.visualstudio.com/api/re
 
 ## Current Limitations
 
-The [VS Code Extension API](https://code.visualstudio.com/api) does not have an event to indicate that the profile of the workspace has changed. Most but not all scenarios are covered by this extension because typically when you switch to another profile, the workspace is reloaded which triggers the extension to update the status bar item. The scenarios that are not covered are:
-- If you create a new, empty profile when running the command `Profiles: Create Profile` with the default settings, the profiles changes but VS Code is not reloaded;
-- If you have the same workspace open in 2 VS Code instances and switch profile in one. The profile is not updated in the other instance.
+The [Extension API](https://code.visualstudio.com/api) does not have an event to indicate that the profile of the workspace has changed. Most but not all scenarios are covered by this extension because typically when you switch to another profile, the workspace is reloaded which triggers the extension to update the status bar item. The scenarios that are not covered are:
+1. If you create a new, empty profile when running the command `Profiles: Create Profile` with the default settings, the profiles changes but VS Code is not reloaded;
+1. If you have the same workspace open in 2 VS Code instances and switch profile in one. The profile is not updated in the other instance.
 
-If you would like the VS Code team to provide API support for this feature, you can give a 👍 (thumbs up) on the [feature request for adding a profile change event](https://github.com/microsoft/vscode/issues/208195).
+If you would like the VS Code team to provide API support for this feature, you can leave a review in the VS Code Marketplace, and I raise another issue.
 
-## Contribute
+## Contributions
 
-Contributions are welcome. If you find a bug, please raise an issue. You can **consult the [FAQ section](#faq) for some common issues** that you may encounter.
+You are welcome to raise an issue. Since this as an experiment, I will not be doing much more with this.
 
-My time is limited for PRs, please raise an issue to discuss first please.
+You can **consult the [FAQ section](#faq) for some common issues** that you may encounter.
 
 ## Appreciate
 

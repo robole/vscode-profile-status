@@ -4,6 +4,13 @@ All notable changes to the "test-profile" extension will be documented in this f
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.12.0] - 2024-09-09
+
+### Changed
+
+- Changed the `preview` in the `package.json` to true. Mark the extension as a preview.
+- Updated README to highlight that this is an experimental extension.
+
 ## [0.11.0] - 2024-03-25
 
 ### Changed
