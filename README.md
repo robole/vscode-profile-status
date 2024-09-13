@@ -9,9 +9,8 @@
 </h1>
 <h4 align="center">Know which your profile you're using, <em>no doubt</em>!</h4>
 
-> Its best to consider this as an ***experiment***. Since the Extension API does not expose any functionality related to profiles, I have done a crafty workaround to get the profile name in global state. However this has some [limitations](#current-limitations) as outlined below.
->
-> Microsoft do *not* plan to add anything related to profiles to the Extensions API (see [issue](https://github.com/microsoft/vscode/issues/208195#issuecomment-2046778283)). If you are interested in this as feature, you can leave a [review in the VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=robole.profile-status&ssr=false#review-details) and I can raise an issue again with Microsoft if there is enough interest.
+> [!IMPORTANT]
+> It's best to consider this an ***experiment***. This employs a workaround to get the profile name and has some [limitations](#current-limitations). The Extension API does not expose any functionality related to profiles, and Microsoft do *not* plan to add anything related to profiles to the Extensions API (see [issue](https://github.com/microsoft/vscode/issues/208195#issuecomment-2046778283)). If you are interested in this as feature, you can leave a [review in the VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=robole.profile-status&ssr=false#review-details) and I can raise an issue again with Microsoft if there is enough interest.
 
 The profile name appears as an item on the left-hand side of the status bar, baby baby. 👊
 
