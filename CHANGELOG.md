@@ -4,6 +4,12 @@ All notable changes to the "test-profile" extension will be documented in this f
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.16.0] - 2024-09-09
+
+### Changed
+
+- Remove GitHub style from note. It dont look get transformed by the marketplace!
+
 ## [0.15.0] - 2024-09-09
 
 ### Changed
